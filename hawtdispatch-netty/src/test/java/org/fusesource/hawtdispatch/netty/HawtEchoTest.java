@@ -117,6 +117,7 @@ public class HawtEchoTest {
             throw ch.exception.get();
         }
     }
+
     private static class EchoHandler extends ChannelInboundByteHandlerAdapter {
         volatile Channel channel;
         final AtomicReference<Throwable> exception = new AtomicReference<Throwable>();
